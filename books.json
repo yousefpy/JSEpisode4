@@ -358,5 +358,35 @@
     "authors": [{ "name": "Lauren Beukes", "id": 9 }],
     "title": "Zoo City",
     "available": true
+  },
+  {
+    "id": 53,
+    "color": "",
+    "authors": [
+      { "name": "Terry Pratchett", "id": 14 },
+      { "name": "Stephen Baxter", "id": 17 }
+    ],
+    "title": "The Long Earth",
+    "available": true
+  },
+  {
+    "id": 54,
+    "color": "",
+    "authors": [
+      { "name": "Terry Pratchett", "id": 14 },
+      { "name": "Stephen Baxter", "id": 17 }
+    ],
+    "title": "The Long War",
+    "available": true
+  },
+  {
+    "id": 55,
+    "color": "",
+    "authors": [
+      { "name": "Terry Pratchett", "id": 14 },
+      { "name": "Stephen Baxter", "id": 17 }
+    ],
+    "title": "The Long Mars",
+    "available": true
   }
 ]

@@ -51,7 +51,7 @@
     "id": 14,
     "name": "Terry Pratchett",
     "imageUrl": "http://pixel.nymag.com/imgs/daily/vulture/2015/03/12/12-terry-pratchett-1.w529.h529.jpg",
-    "books": [46, 49, 51, 50]
+    "books": [46, 49, 51, 50, 53, 54, 55]
   },
   {
     "id": 10,
@@ -88,5 +88,11 @@
     "name": "Charles Yu",
     "imageUrl": "https://www.kcrw.com/news-culture/shows/bookworm/charles-yu-how-to-live-safely-in-a-science-fictional-universe/@@images/square_image/feature",
     "books": [41, 42]
+  },
+  {
+    "id": 17,
+    "name": "Stephen Baxter",
+    "imageUrl": "https://images.gr-assets.com/authors/1391280682p5/20295.jpg",
+    "books": [53, 54, 55]
   }
 ]
