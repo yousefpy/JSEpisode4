@@ -69,7 +69,7 @@ function mostProlificAuthor(authors) {
 }
 
 /**************************************************************
- * relatedBooks(bookId, books):
+ * relatedBooks(bookId, authors, books):
  * - receives a bookId
  * - receives a list of authors
  * - receives a list of books
