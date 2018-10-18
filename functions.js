@@ -33,7 +33,7 @@ function bookCountsByAuthor(authors) {
 /**************************************************************
  * booksByColor(books):
  * - receives an array of books
- * - returns an object where the keys ar colors
+ * - returns an object where the keys are colors
  *   and the values are arrays of book titles:
  *    { <COLOR>: [<BOOK_TITLES>] }
  ****************************************************************/
@@ -77,7 +77,18 @@ function mostProlificAuthor(authors) {
  *   the same author as the book with bookId
  *   (including the original book)
  *
- * NOTES: YOU NEED TO TAKE INTO ACCOUNT BOOKS WITH MULTIPLE AUTHORS
+ * e.g. Let's send in bookId 37 ("The Shining Girls" by Lauren Beukes):
+ *      relatedBooks(37);
+ * We should get back all of Lauren Beukes's books:
+ *      ["The Shining Girls", "Zoo City"]
+ *
+ * NOTE: YOU NEED TO TAKE INTO ACCOUNT BOOKS WITH MULTIPLE AUTHORS
+ *
+ * e.g. Let's send in bookId 46 ("Good Omens" by Terry Pratchett and Neil Gaiman):
+ *      relatedBooks(46);
+ * We should get back all of Neil Gaiman's books AND all of Terry Pratchett's books:
+ *      ["Good Omens", "Good Omens", "Neverwhere", "Coraline", "The Color of Magic", "The Hogfather", "Wee Free Men", "The Long Earth", "The Long War", "The Long Mars"]
+ *
  * BONUS: REMOVE DUPLICATE BOOKS
  ****************************************************************/
 function relatedBooks(bookId, authors, books) {
