@@ -361,7 +361,7 @@
   },
   {
     "id": 53,
-    "color": "",
+    "color": "blue",
     "authors": [
       { "name": "Terry Pratchett", "id": 14 },
       { "name": "Stephen Baxter", "id": 17 }
@@ -371,7 +371,7 @@
   },
   {
     "id": 54,
-    "color": "",
+    "color": "green",
     "authors": [
       { "name": "Terry Pratchett", "id": 14 },
       { "name": "Stephen Baxter", "id": 17 }
@@ -381,7 +381,7 @@
   },
   {
     "id": 55,
-    "color": "",
+    "color": "red",
     "authors": [
       { "name": "Terry Pratchett", "id": 14 },
       { "name": "Stephen Baxter", "id": 17 }
