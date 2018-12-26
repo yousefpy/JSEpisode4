@@ -6,7 +6,14 @@
  * - returns undefined if no matching book is found
  ****************************************************************/
 function getBookById(bookId, books) {
-  // Your code goes here
+  // let bookObj = {
+  // };
+  // books.forEach(book => {
+  //   if (book.id === bookId){
+  //     bookObj = book;
+  //   }
+  // });
+  return books.find( book => book.id === bookId );
 }
 
 /**************************************************************
@@ -17,7 +24,9 @@ function getBookById(bookId, books) {
  * - returns undefined if no matching author is found
  ****************************************************************/
 function getAuthorByName(authorName, authors) {
-  // Your code goes here
+  // const authorFound = authors.find( author => author.name.toLowerCase() === authorName.toLowerCase() );
+  // return authorFound;
+  return authors.find( author => author.name.toLowerCase() === authorName.toLowerCase() );
 }
 
 /**************************************************************
@@ -27,7 +36,22 @@ function getAuthorByName(authorName, authors) {
  *    [{ author: <NAME>, bookCount: <NUMBER_OF_BOOKS> }]
  ****************************************************************/
 function bookCountsByAuthor(authors) {
-  // Your code goes here
+  let anArray = [];
+  let obj = {
+  }
+  authors.forEach(author => {
+    obj.author = author.name;
+    obj.bookCount = author.books.length;
+    anArray.push(obj);
+    obj = {};
+  });
+  // return anArray;
+  // return authors.map(author => {
+  //   return {
+  //     author: author.name,
+  //     bookCount: author.book.length
+  //   };
+  // });
 }
 
 /**************************************************************
@@ -39,9 +63,13 @@ function bookCountsByAuthor(authors) {
  ****************************************************************/
 function booksByColor(books) {
   const colors = {};
-
-  // Your code goes here
-
+  books.forEach(book => {
+    if (colors[book.color]){
+      colors[book.color].push(book.title)
+    } else {
+      colors[book.color] = [book.title]
+    }
+    });
   return colors;
 }
 
@@ -54,7 +82,16 @@ function booksByColor(books) {
  *    ["The Hitchhikers Guide", "The Meaning of Liff"]
  ****************************************************************/
 function titlesByAuthorName(authorName, authors, books) {
-  // Your code goes here
+  let booksName = [];
+  if (authorObj= getAuthorByName(authorName, authors)){
+    let booksIDs = authorObj.books;
+    booksIDs.forEach(bookID =>{
+      booksName.push(getBookById(bookID, books).title);
+    });
+      return booksName;
+   } else { 
+     return []
+    }
 }
 
 /**************************************************************
@@ -65,7 +102,15 @@ function titlesByAuthorName(authorName, authors, books) {
  * Note: assume there will never be a tie
  ****************************************************************/
 function mostProlificAuthor(authors) {
-  // Your code goes here
+  let authorName = "";
+  let numOfBook = 0;
+  authors.forEach(author => {
+    if (author.books.length > numOfBook){
+      numOfBook = author.books.length;
+      authorName = author.name;
+    }
+  })
+  return authorName;
 }
 
 /**************************************************************
